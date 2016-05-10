@@ -1,0 +1,188 @@
+[INFO]
+Descendant = Bob
+Ascendant = Will
+
+[Person_0]
+Name = P1
+Lastname = Relation_8
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_1]
+Name = P4
+Lastname = Relation_8
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_2]
+Name = Bob
+Lastname = Relation_0
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_3]
+Name = Marry
+Lastname = Relation_0 & Relation_4
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_4]
+Name = X1
+Lastname = Hamlatzis
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_5]
+Name = X2
+Lastname = Relation_1
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_6]
+Name = Will
+Lastname = Relation_3
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_7]
+Name = Kate
+Lastname = Relation_3
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_8]
+Name = Will
+Lastname = Relation_5
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_9]
+Name = Haha
+Lastname = Relation_5
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_10]
+Name = Will
+Lastname = Relation_9
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_11]
+Name = P5
+Lastname = Relation_9
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_12]
+Name = Harry
+Lastname = Relation_4
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_13]
+Name = Helen
+Lastname = Relation_1
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_14]
+Name = P2
+Lastname = Relation_6
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_15]
+Name = Will
+Lastname = Relation_6 & Relation_2
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_16]
+Name = Ann
+Lastname = Relation_2
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_17]
+Name = Bob
+Lastname = Hamlatzis
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_18]
+Name = Michael
+Lastname = Hamlatzis
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_19]
+Name = P3
+Lastname = Relation_7
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_20]
+Name = Nick
+Lastname = Relation_7
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Person_21]
+Name = Bob
+Lastname = Hamlatzis
+Location = Greece
+DateOfBirth = 10/05/2016
+
+[Relation_0]
+Partner_0 = 2
+Partner_1 = 3
+Child_0 = 4
+Child_1 = 5
+
+[Relation_1]
+Partner_0 = 5
+Partner_1 = 13
+Child_0 = 15
+
+[Relation_2]
+Partner_0 = 15
+Partner_1 = 16
+Child_0 = 17
+Child_1 = 18
+
+[Relation_3]
+Partner_0 = 6
+Partner_1 = 7
+Child_0 = 3
+
+[Relation_4]
+Partner_0 = 3
+Partner_1 = 12
+
+[Relation_5]
+Partner_0 = 8
+Partner_1 = 9
+Child_0 = 7
+
+[Relation_6]
+Partner_0 = 14
+Partner_1 = 15
+Child_0 = 20
+
+[Relation_7]
+Partner_0 = 19
+Partner_1 = 20
+Child_0 = 21
+
+[Relation_8]
+Partner_0 = 0
+Partner_1 = 1
+Child_0 = 2
+
+[Relation_9]
+Partner_0 = 10
+Partner_1 = 11
+Child_0 = 12
+
+

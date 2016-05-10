@@ -2,6 +2,8 @@
 #define _GEN_GRAPH_
 
 #include <vector>
+#include <set>
+#include <utility>
 
 class Relations;
 class Person;
@@ -14,18 +16,22 @@ public:
 
 public:
 	// Actions
-	void ConnectPeople( const Person* pFirstPerson, const Person* pSecondPerson, const std::vector<Person*>& vChildren );
+	void ConnectPeople( Person* pFirstPerson, Person* pSecondPerson, const std::vector<Person*>& vChildren );
 
 	// Getters
-	typedef std::vector<Relations*> branch;
-	bool GetFamilyTree( std::vector<branch>& vBranches, const std::string& strDescendantName, const std::string& strAscendantName );
+	typedef std::vector< std::pair<Relations*, const Person*> > relations;
+	bool GetFamilyTree( std::vector<relations>& vRelations, const std::string& strDescendantName, const std::string& strAscendantName );
 
+private:
 	// Helper methods
-	void GetAscendants( branch& vRelations, const Person* pPerson, const std::string& strAscendantName );
+	void GetAscendants( relations& vRelations, const Person* pPerson );
+	void CleanupAscendants( const std::string& strAscendantName );
 
 private:
 	std::vector<Relations*> mvRelations;
-	std::vector<Person*> mvPersons;
+	std::set<Person*> mPersons;
+
+	std::vector<relations> mvRelationsPath;
 };
 
 #endif

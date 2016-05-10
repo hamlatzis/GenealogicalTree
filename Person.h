@@ -19,19 +19,18 @@ public:
 	void SetDateOfBirth( const std::string& strDateOfBirth ) { mstrDateOfBirth = strDateOfBirth; }
 	void SetLocation( const std::string& strLocation ) { mstrLocation = strLocation; }
 
-	void AddRelation( Relations* pRelation ); // allow for re-marriage
+	void AddRelation( Relations* pRelation ); // allow for re-marriage and/or societies were more than one spouse/husband are allowed
+	void FromRelation( Relations* pRelation );
 
 	// Queries
-	unsigned int TotalRelations() const { return (unsigned int)mvRelations.size(); }
+	unsigned int TotalRelations() const { return (unsigned int)mvHasRelations.size(); }
 	Relations* GetRelation(const unsigned int nRelation) const;
+	Relations* FromRelation() const { return mpFromRelation; }
 
 	std::string GetName() const { return mstrFirstName; }
 	std::string GetLastName() const { return mstrLastName; }
 	std::string GetDateOfBirth() const { return mstrDateOfBirth; }
 	std::string GetLocation() const { return mstrLocation; }
-
-	// Helper methods
-	bool Visited() const { return mbVisited; }
 
 private:
 	std::string mstrFirstName;
@@ -39,8 +38,7 @@ private:
 	std::string mstrDateOfBirth;
 	std::string mstrLocation;
 
-	std::vector<Relations*> mvRelations;
-
-	bool mbVisited;
+	std::vector<Relations*> mvHasRelations;
+	Relations* mpFromRelation;
 };
 #endif

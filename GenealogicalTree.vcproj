@@ -88,6 +88,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
+				CommandLine="copy &quot;$(OutDir)\$(ProjectName).exe&quot; &quot;$(ProjectDir)\$(ProjectName).exe&quot;"
 			/>
 		</Configuration>
 		<Configuration
@@ -163,6 +164,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
+				CommandLine="copy &quot;$(OutDir)\$(ProjectName).exe&quot; &quot;$(ProjectDir)\$(ProjectName).exe&quot;"
 			/>
 		</Configuration>
 	</Configurations>
@@ -177,6 +179,30 @@
 			<File
 				RelativePath=".\GenealogicalTree.cpp"
 				>
+			</File>
+			<File
+				RelativePath=".\GenGraph.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\IniFile.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="0"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="0"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\Person.cpp"
@@ -212,6 +238,14 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\GenGraph.h"
+				>
+			</File>
+			<File
+				RelativePath=".\IniFile.h"
+				>
+			</File>
 			<File
 				RelativePath=".\Person.h"
 				>
